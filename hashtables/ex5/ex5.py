@@ -7,6 +7,16 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
+    hash = {}
+    result = []
+
+    for i in files:
+        hash[i] = 0
+
+    for x in hash:
+        for q in queries:
+            if q in x:
+                result.append(x)
 
     return result
 
